@@ -39,7 +39,7 @@ const Projects = () => {
         <div className="title-container">
           <h1 className="title">Projects</h1>
         </div>
-        <ul className="portfolio-menu">{renderMenuList()}</ul>
+        {/* <ul className="portfolio-menu">{renderMenuList()}</ul> */}
         <div className="project-list">
           <div className="grid-container">
             <div className="project-tile" data-aos="fade-up">
@@ -150,7 +150,7 @@ const Projects = () => {
                   <span>CSS</span>
                   <span>Bootstrap</span>
                   <a
-                    href="https://github.com/garthzx/extrack"
+                    href="https://github.com/garthzx/bulkybook"
                     className="project-link"
                     target="_blank"
                     rel="noreferrer"
