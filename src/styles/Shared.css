@@ -1,0 +1,8 @@
+:root {
+  --text-theme-default: #525f7f;  
+  --color-theme-primary: #747fe0;
+}
+
+* {
+  color: var(--text-theme-default);
+}

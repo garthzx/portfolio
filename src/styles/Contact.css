@@ -1,0 +1,48 @@
+.contact {
+  margin: 5rem 0;
+}
+
+.contact .flexed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 24px;
+}
+
+.contact .flexed h1 {
+  font-size: 2rem;
+}
+
+.contact .flexed .contacts-nav {
+  display: flex;
+}
+
+.contact .flexed .contacts-nav span::after {
+  content: "||";
+  margin: 0 30px;
+}
+
+.contact .flexed .contacts-nav a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  position: relative;
+}
+.contact .flexed .contacts-nav a:hover {
+  color: var(--color-theme-primary);
+}
+
+.contact .flexed .contacts-nav a:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -2rem;
+  width: 0;
+  height: 8px;
+  background-color: var(--color-theme-primary);
+  content: "";
+  transition: width 0.15s;
+}
+
+.contact .flexed .contacts-nav a:hover::after {
+  width: 100%;
+}
