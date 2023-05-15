@@ -128,7 +128,9 @@
 
 .project-tile .tech-used {
   display: flex;
+  flex-wrap: wrap;
   position: relative;
+  row-gap: 12px;
   margin-top: 1rem;
 }
 
