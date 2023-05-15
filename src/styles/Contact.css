@@ -46,3 +46,24 @@
 .contact .flexed .contacts-nav a:hover::after {
   width: 100%;
 }
+
+@media screen and (max-width: 584px) {
+  section.contact .contacts-nav {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 32px;
+  }
+
+  section.contact .flexed .contacts-nav span {
+    text-align: center;
+  }
+
+  section.contact .flexed .contacts-nav span::after {
+    content: "";
+    margin: 0;
+  }
+
+  .contact .flexed .contacts-nav a:after {
+    bottom: -1.4rem;
+  }
+}

@@ -148,3 +148,32 @@
 .right .right-item:hover i {
   color: var(--color-theme-primary);
 }
+
+@media screen and (max-width: 535px) {
+  .header nav {
+    flex-direction: column;
+    row-gap: 24px;
+  }
+
+  .header nav .left {
+    flex-direction: column;
+    row-gap: 24px;
+  }
+
+  .header nav .right {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .header-name .image-container {
+    position: static;
+  }
+  .header-name {
+    flex-direction: column;
+  }
+
+  .header-name .typewriter a {
+    font-size: 2rem;
+  }
+}
