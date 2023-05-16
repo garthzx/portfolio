@@ -27,7 +27,7 @@ export const projectData = [
     title: "Bulky Book",
     description:
       "A simple E-Commerce website built using ASP.NET Core MVC (.NET 6). This was developed by following my online course on Udemy.",
-    imgSrc: require("../assets/projects/doodle.png"),
+    imgSrc: require("../assets/projects/bulkybook.png"),
     techUsed: ["ASP.NET MVC", "HTML", "CSS3", "Bootstrap"],
     githubHref: "https://github.com/garthzx/bulkybook",
   },
