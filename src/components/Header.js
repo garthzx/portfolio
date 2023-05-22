@@ -5,12 +5,12 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header-name">
+        <div className="image-container">
+          <img src={require("../assets/me.jpg")} alt="profile" />
+        </div>
         <div className="typewriter">
           <span></span>
-          <a href="/">Garth Dustin</a>
-        </div>
-        <div className="image-container">
-          <img src={require("../assets/me.jpg")} alt="profile"/>
+          <a href="#">Garth Dustin</a>
         </div>
       </div>
       <nav>
@@ -29,7 +29,7 @@ const Header = () => {
           <a
             href="https://www.instagram.com/garthzx/"
             className="right-item"
-            target="_blank" 
+            target="_blank"
             rel="noreferrer"
           >
             <i className="fa-brands fa-instagram"></i>

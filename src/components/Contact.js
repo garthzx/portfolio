@@ -3,7 +3,7 @@ import "../styles/Contact.css";
 
 const Contact = () => {
   return (
-    <section id="contact" className="contact" data-aos="fade-up">
+    <section id="contact" className="contact">
       <div className="wrapper">
         <div className="flexed">
           <h1>Contact me!</h1>
@@ -21,6 +21,9 @@ const Contact = () => {
             </span>
           </nav>
         </div>
+      </div>
+      <div style={{textAlign: "center", marginTop: "2rem"}}>
+      &copy; Garth Ayang-ang. All rights reserved
       </div>
     </section>
   );

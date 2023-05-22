@@ -1,0 +1,64 @@
+.additional-about * {
+  margin: 0;
+  padding: 0;
+}
+
+.additional-about {
+  margin-top: 4rem;
+}
+
+.additional-about .section-title {
+  margin: 2rem 0px;
+}
+
+.additional-about .afk > p {
+  line-height: 32px;
+  margin: 2rem 0px;
+}
+
+.additional-about .image-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.additional-about .image-container div {
+  text-align: center;
+}
+
+.afk .image-container img {
+  width: 200px;
+  border-radius: 1px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+
+}
+
+@media screen and (max-width: 950px) {
+  .additional-about .image-container div:first-child {
+    text-align: right;
+  }
+  .additional-about .image-container div:nth-child(2) {
+    text-align: left;
+  }
+  .additional-about .image-container div:nth-child(3) {
+    text-align: right;
+  }
+  .additional-about .image-container div:nth-child(4) {
+    text-align: left;
+  }
+
+  .additional-about .image-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .additional-about .image-container div {
+    text-align: center;
+    margin: 12px;
+  }
+}
+
+
+@media screen and (max-width: 440px) {
+  .additional-about .image-container {
+    display: none;
+  }
+}

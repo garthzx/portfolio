@@ -152,6 +152,7 @@
 @media screen and (max-width: 535px) {
   .header nav {
     flex-direction: column;
+    padding: 12px 0;
     row-gap: 24px;
   }
 
@@ -166,6 +167,13 @@
 }
 
 @media screen and (max-width: 570px) {
+  .header-name {
+    row-gap: 2rem;
+  }
+  .header-name .typewriter {
+    margin-right: auto;
+  }
+
   .header-name .image-container {
     position: static;
   }

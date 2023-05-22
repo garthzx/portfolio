@@ -17,32 +17,36 @@ const Projects = () => {
 
   const renderProjectTiles = () => {
     return projectData.map((project) => {
-      return <div className="project-tile" data-aos="fade-up">
-        <div className="project-tile-expansion">
-          <p className="project-description">{project.description}</p>
-        </div>
-        <div>
-          <img
-            src={project.imgSrc}
-            alt="survey-form"
-          />
-          <div className="tech-used">
-            {project.techUsed.map(i => <span>{i}</span>)}
-            <a
-              href={project.githubHref}
-              className="project-link"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i className="fa-brands fa-github"></i>
-            </a>
+      return (
+        <div className="project-tile" data-aos="fade-up" key={project.id}>
+          <div className="project-tile-expansion">
+            <p className="project-description">{project.description}</p>
           </div>
-          <h2 className="project-title">{project.title}</h2>
+          <div>
+            <img src={project.imgSrc} alt="survey-form" />
+            <div className="tech-used">
+              <div>
+                {project.techUsed.map((i) => (
+                  <span key={project.techUsed.indexOf(i)}>{i}</span>
+                ))}
+              </div>
+              <a
+                href={project.githubHref}
+                className="project-link"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i className="fa-brands fa-github"></i>
+              </a>
+            </div>
+            <h2 className="project-title">{project.title}</h2>
+          </div>
         </div>
-      </div>;
+      );
     });
   };
 
+  // FEATURE: To be added upon having more projects :)
   const renderMenuList = () => {
     const menuList = ["All", "C#", "Java", "Python", "React"];
 
@@ -70,9 +74,7 @@ const Projects = () => {
         </div>
         {/* <ul className="portfolio-menu">{renderMenuList()}</ul> */}
         <div className="project-list">
-          <div className="grid-container">
-            {renderProjectTiles()}
-          </div>
+          <div className="grid-container">{renderProjectTiles()}</div>
         </div>
       </div>
     </section>
